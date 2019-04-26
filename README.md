@@ -10,6 +10,14 @@ The data for the paper can be found here: https://osf.io/htgrn/  or DOI 10.17605
 
 The code is still under development and may not be the easiest to use in its current form. Future versions will improve on that. 
 
+### Requirements:
+Main libraries: Tensorflow 1.8, python 3.x 
+
+Python libraries: matplotlib, numpy, sklearn, mpl_toolkits, argparse, tensorflow
+
+
+### To run code:
+
 To convert the raw Cassini-VIMS ascii data found in /data/storm, please run 
 
 ```python
@@ -26,6 +34,13 @@ python PlanetNet_cnn_train.py
 
 and make sure you point the code to the right data paths within the file. 
 In future versions the user interface will be revamped to make it easier to interact with the code. 
+
+Finally you can predict the learned class labels on a prepared data cube using 
+```pyhton
+python PlanetNet_predict.py
+```
+
+Again, data paths need to currently be changed within the file.
 
 
 ### License:
